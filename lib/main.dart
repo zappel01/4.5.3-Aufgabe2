@@ -39,7 +39,16 @@ class MyWidget extends StatelessWidget {
         Container(
           width: 100,
           height: 100,
-          color: Colors.blue,
+          decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(8.0),
+              boxShadow: const [
+                BoxShadow(
+                    color: Colors.grey,
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: Offset(0, 3))
+              ]),
           child: const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
